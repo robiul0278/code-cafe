@@ -10,12 +10,18 @@ const Home = () => {
         .then(data => setBlog(data))
     }, [])
 
-
+    const handleAddToCart = (props) => {
+      
+    }
 
   return (
     <div className="grid gap-3">
         {
-            blogs.map((blog) => <SingleCart blog={blog}></SingleCart>)
+            blogs.map((blog) => <SingleCart
+             blog={blog}
+             key={blog.id}
+             handleAddToCart={handleAddToCart}
+             ></SingleCart>)
         }
     </div>
   );

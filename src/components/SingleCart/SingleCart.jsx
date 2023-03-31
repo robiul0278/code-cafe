@@ -2,7 +2,7 @@ import React from "react";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faBookmark } from '@fortawesome/free-solid-svg-icons'
 
-const SingleCart = ({blog}) => {
+const SingleCart = ({blog, handleAddToCart}) => {
   return (
     <div>
       <div className="card card-compact bg-base-100 shadow-x">
@@ -29,7 +29,10 @@ const SingleCart = ({blog}) => {
                 </div>
                 <div className="px-3 ">
                     <span className="text-neutral-500 pr-2 text-xl">{blog.readTime}</span>
-                    <button className="text-xl"><FontAwesomeIcon className="hover:text-green-400" icon={faBookmark} /></button>
+                    <button
+                    onClick={()=> handleAddToCart(blog.id)}
+                    ><FontAwesomeIcon className="hover:text-blue-400 text-blue-500 text-xl" icon={faBookmark} 
+                    /></button>
                 </div>
             </div>
           <h2 className="card-title text-3xl font-bold py-3">{blog.title}</h2>
