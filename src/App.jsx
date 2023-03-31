@@ -9,11 +9,11 @@ function App() {
   return (
     <div className="App container mx-auto">
       <Header></Header>
-      <div className="grid grid-cols-4 gap-4">
-        <div className='md:col-span-3 col-span-1'>
+      <div className="grid grid-cols-12  gap-7">
+        <div className='col-span-8'>
           <Home></Home>
         </div>
-        <div className='md:col-span-1 col-span-1'>
+        <div className='col-span-4'>
           <SideBar></SideBar>
         </div>
       </div>

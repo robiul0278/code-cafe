@@ -5,7 +5,7 @@ import { faUser } from "@fortawesome/free-solid-svg-icons";
 const Header = () => {
   return (
     <div>
-      <div className="navbar mb-4 border-b-2">
+      <div className="navbar mb-7 border-b-2">
         <div className="flex-1">
           <a className="btn btn-ghost normal-case text-3xl font-bold">
             Code Cafe

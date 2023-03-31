@@ -24,16 +24,16 @@ const SingleCart = ({blog}) => {
                     </div>
                     <div className=" px-3 leading-6">
                         <p className="text-lg font-bold">{blog.authorName}</p>
-                        <p className="text-neutral-500">{blog.date}</p>
+                        <p className="text-neutral-500 text-sm">{blog.date}</p>
                     </div>
                 </div>
                 <div className="px-3 ">
-                    <span className="text-neutral-500 pr-2">{blog.readTime}</span>
-                    <button><FontAwesomeIcon icon={faBookmark} /></button>
+                    <span className="text-neutral-500 pr-2 text-xl">{blog.readTime}</span>
+                    <button className="text-xl"><FontAwesomeIcon className="hover:text-green-400" icon={faBookmark} /></button>
                 </div>
             </div>
           <h2 className="card-title text-3xl font-bold py-3">{blog.title}</h2>
-          <p className="py-1">#beginners #programming</p>
+          <p className="py-1 text-xl">#beginners #programming</p>
           <a className="pb-2 text-indigo-600 font-bold" href="#">Mark as read</a>
           <hr />
         </div>
