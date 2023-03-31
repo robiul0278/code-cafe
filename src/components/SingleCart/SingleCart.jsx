@@ -10,7 +10,7 @@ const SingleCart = ({blog, handleAddToCart}) => {
           <img
           className=" bg-cover bg-center rounded-xl"
             src={blog.image}
-            alt="Shoes"
+            alt="image"
           />
         </figure>
         <div className="card-body">

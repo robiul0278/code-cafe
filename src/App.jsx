@@ -15,11 +15,11 @@ function App() {
   return (
     <div className="App container mx-auto">
       <Header></Header>
-      <div className="grid grid-cols-12  gap-7">
-        <div className='col-span-8'>
+      <div className="grid md:grid-cols-12  md:gap-7">
+        <div className='md:col-span-8'>
           <Home handleAddToCart={handleAddToCart}></Home>
         </div>
-        <div className='col-span-4'>
+        <div className='md:col-span-4'>
           <SideBar cart={cart}></SideBar>
         </div>
       </div>

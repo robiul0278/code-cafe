@@ -7,7 +7,7 @@ const SideBar = ({ cart }) => {
   }
 
   return (
-    <div className="sticky top-0">
+    <div className="sticky top-0 h-screen">
       <div className="border-2 bg-blue-500/[.09] from-indigo-500 border-blue-500 text-center p-2 rounded-xl mb-7">
         <p className="font-bold text-blue-500 text-xl">
           Spent time on read : {total} min read
