@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import SingleCart from "../SingleCart/SingleCart";
 
-const Home = () => {
+const Home = ({handleAddToCart}) => {
 
     const [blogs, setBlog] = useState([])
     useEffect( () => {
@@ -10,9 +10,6 @@ const Home = () => {
         .then(data => setBlog(data))
     }, [])
 
-    const handleAddToCart = (mark) => {
-      console.log(mark)
-    }
 
   return (
     <div className="grid gap-3">

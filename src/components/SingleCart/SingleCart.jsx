@@ -30,7 +30,7 @@ const SingleCart = ({blog, handleAddToCart}) => {
                 <div className="px-3 ">
                     <span className="text-neutral-500 pr-2 text-xl">{blog.readTime}</span>
                     <button
-                    onClick={()=> handleAddToCart(blog.id)}
+                    onClick={()=> handleAddToCart(blog)}
                     ><FontAwesomeIcon className="hover:text-blue-400 text-blue-500 text-xl" icon={faBookmark} 
                     /></button>
                 </div>
