@@ -10,8 +10,8 @@ const Home = () => {
         .then(data => setBlog(data))
     }, [])
 
-    const handleAddToCart = (props) => {
-      
+    const handleAddToCart = (mark) => {
+      console.log(mark)
     }
 
   return (
