@@ -2,6 +2,8 @@ import React from "react";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faBookmark } from '@fortawesome/free-solid-svg-icons'
 
+
+
 const SingleCart = ({blog, handleAddToCart, handleReadTime}) => {
   return (
     <div>
