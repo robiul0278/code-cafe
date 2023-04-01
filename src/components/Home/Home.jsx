@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import SingleCart from "../SingleCart/SingleCart";
 
-const Home = ({handleAddToCart}) => {
+const Home = ({handleAddToCart, handleReadTime}) => {
 
     const [blogs, setBlog] = useState([])
     useEffect( () => {
@@ -18,6 +18,7 @@ const Home = ({handleAddToCart}) => {
              blog={blog}
              key={blog.id}
              handleAddToCart={handleAddToCart}
+             handleReadTime={handleReadTime}
              ></SingleCart>)
         }
     </div>

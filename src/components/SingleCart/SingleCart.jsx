@@ -2,7 +2,7 @@ import React from "react";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faBookmark } from '@fortawesome/free-solid-svg-icons'
 
-const SingleCart = ({blog, handleAddToCart}) => {
+const SingleCart = ({blog, handleAddToCart, handleReadTime}) => {
   return (
     <div>
       <div className="card card-compact bg-base-100 shadow-x">
@@ -37,7 +37,7 @@ const SingleCart = ({blog, handleAddToCart}) => {
             </div>
           <h2 className="card-title text-3xl font-bold py-3">{blog.title}</h2>
           <p className="py-1 text-xl">#beginners #programming</p>
-          <a className="pb-2 text-indigo-600 font-bold" href="#">Mark as read</a>
+          <a onClick={()=> handleReadTime(blog)} className="pb-2 text-indigo-600 font-bold" href="#">Mark as read</a>
           <hr />
         </div>
       </div>
